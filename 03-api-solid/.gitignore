@@ -1,3 +1,40 @@
-node_modules
+# Node modules (padrão, sempre fora do git)
+node_modules/
+
+# Pastas de build/output (caso use TypeScript ou bundlers)
+dist/
+build/
+.out/
+.next/
+.vercel/
+
+# Prisma generated client
+generated/
+prisma/generated/
+
+# Ambiente e configs sensíveis
 .env
-build
+.env.*.local
+
+# Logs e cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.vscode/
+.idea/
+
+# Sistema operacional (Windows, macOS)
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# SQLite local (se um dia tu usar SQLite com Prisma)
+dev.db
+dev.db-journal
+
+# Outros arquivos gerados por containers (opcional, mas útil)
+docker-compose.override.yml
